@@ -1,12 +1,13 @@
-import User from './components/User/User';
+import UserList from "./components/User/UserList";
 import './App.css';
 
+//TODO: Lo ideal es que cuando utilice el componente UserList
+//  Le pase como props el array de usuarios <UserList Users=array />
+
 function App() {
-  const a = 10;
   return (
-    <div className="App-header">
-      <h1>Hola mundo: {a}</h1>
-      <User Nombre="Pablo" />
+    <div>
+      <UserList />
     </div>
   );
 }
