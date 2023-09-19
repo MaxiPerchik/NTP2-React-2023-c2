@@ -8,6 +8,7 @@ export default function UserList(props){
             {props.Users.map(user => {
                 return (
                     <User 
+                        Id = {user["Object Id"]}
                         UserName = {user["Display name"]}
                         Title = {user.Title}
                         Picture = {user.Picture}                        
